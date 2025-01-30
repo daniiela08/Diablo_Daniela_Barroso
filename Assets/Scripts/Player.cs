@@ -49,4 +49,4 @@ public class Player : MonoBehaviour
             agent.stoppingDistance = 0f;
         }
     }
-}
+} 

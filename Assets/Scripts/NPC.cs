@@ -7,6 +7,7 @@ public class NPC : MonoBehaviour
 {
     [SerializeField] private DialogoSO miDialogo;
     [SerializeField] private float duracionRotacion;
+    [SerializeField] private Transform cameraPoint;
     void Start()
     {
 
@@ -22,6 +23,6 @@ public class NPC : MonoBehaviour
     }
     private void EmpezarInteraccion()
     {
-        SistemaDialogo.System.StartDialogue(miDialogo);
+        SistemaDialogo.System.StartDialogue(miDialogo, cameraPoint);
     }
 }

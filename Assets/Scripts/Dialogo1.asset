@@ -12,5 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1726c676fc7e9014cbcc0beabde163c6, type: 3}
   m_Name: Dialogo1
   m_EditorClassIdentifier: 
-  frases: []
-  tiempoEntreLetras: 0.25
+  frases:
+  - 'Hola Caracola te esperan unas aventuras mazxo de guapas
+
+'
+  - "Eres mi luz, mi dulce alegr\xEDa, un sue\xF1o eterno de cada d\xEDa. Tu risa
+    brilla como el sol, mi coraz\xF3n late solo por ti amor"
+  tiempoEntreLetras: 0.05
