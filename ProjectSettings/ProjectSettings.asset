@@ -14,7 +14,7 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: DefaultCompany
   productName: Diablo_Daniela_Barroso
-  defaultCursor: {fileID: 2800000, guid: e8da6823dea48c6459c77a4ababb83a5, type: 3}
+  defaultCursor: {fileID: 2800000, guid: f8d327f88e3408f42b3dc6850224b676, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
   m_ShowUnitySplashScreen: 1
@@ -862,8 +862,8 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Diablo_Daniela_Barroso
-  metroPackageVersion: 
+  metroPackageName: DiabloDanielaBarroso
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -871,7 +871,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: Diablo_Daniela_Barroso
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: Diablo_Daniela_Barroso
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0

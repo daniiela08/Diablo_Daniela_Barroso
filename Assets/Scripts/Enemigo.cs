@@ -8,7 +8,9 @@ public class Enemigo : MonoBehaviour, IIDamagable
 {
     [SerializeField] private float vidasIniciales;
     [SerializeField] private Image healthBar;
-    [SerializeField] AnimacionesEnemigo enemigoAnims;
+    [SerializeField] private AnimacionesEnemigo enemigoAnims;
+    [SerializeField] private GameObject canvas;
+    [SerializeField] private Collider coll;
 
     [SerializeField] private Texture2D defaultIcon;
     [SerializeField] private Texture2D interactIcon;
@@ -55,7 +57,7 @@ public class Enemigo : MonoBehaviour, IIDamagable
         vidasActuales -= enemyDanio;
         healthBar.fillAmount = vidasActuales / vidasIniciales;
 
-        if (vidasIniciales <= 0)
+        if (vidasIniciales <= 0 || healthBar.fillAmount <= 0)
         {
             isDeath = true;
             Death();
@@ -63,9 +65,11 @@ public class Enemigo : MonoBehaviour, IIDamagable
     }
     private void Death()
     {
+        Destroy(canvas);
+        Destroy(coll);
         Destroy(combate);
         Destroy(patrulla.gameObject);
-        Destroy(gameObject, 5);
+        Destroy(gameObject, 3);
         enemigoAnims.DeathAnim();
     }
 }
