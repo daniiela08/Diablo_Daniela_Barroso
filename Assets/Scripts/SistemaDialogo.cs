@@ -16,6 +16,8 @@ public class SistemaDialogo : MonoBehaviour
     private int indiceFraseActual = 0;
 
     private DialogoSO dialogoActual;
+
+    [SerializeField] private EventManagerSO eventmanager;
     void Awake()
     {
         if (System == null)
@@ -84,6 +86,12 @@ public class SistemaDialogo : MonoBehaviour
         Time.timeScale = 1;
         frameDialogo.SetActive(false);
         indiceFraseActual = 0;
+
+        if (dialogoActual.tieneMision)
+        {
+            eventmanager.NuevaMision(dialogoActual.mision);
+        }
+
         dialogoActual = null;
     }
 }

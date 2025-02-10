@@ -10,6 +10,7 @@ public class SistemaCombate : MonoBehaviour
     [SerializeField] private NavMeshAgent agent;
     [SerializeField] private float velocidadCombate;
     [SerializeField] private float distanciaAtaque;
+    [SerializeField] private float danioAtaque;
     [SerializeField] private Animator anim;
     private void Awake()
     {
@@ -29,7 +30,7 @@ public class SistemaCombate : MonoBehaviour
             agent.SetDestination(main.Objetivo.position);
             if(!agent.pathPending && agent.remainingDistance <= distanciaAtaque)
             {
-                anim.SetBool("Atacando", true);
+                anim.SetBool("IsAttacking", true);
             }
         }
         else
@@ -45,4 +46,18 @@ public class SistemaCombate : MonoBehaviour
         Quaternion rotacionObjetivo = Quaternion.LookRotation(direccionObjetivo);
         transform.rotation = rotacionObjetivo;
     }
+    public void Attack()
+    {
+        main.Objetivo.GetComponent<IIDamagable>().RecibirDanio(danioAtaque);
+    }
+    #region Ejecutados por evento de animacion
+    private void AttackAnim()
+    {
+        anim.SetBool("IsAttacking", true);
+    }
+    private void EndAttackAnim()
+    {
+        anim.SetBool("IsAttacking", false);
+    }
+    #endregion
 }
