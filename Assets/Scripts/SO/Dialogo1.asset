@@ -17,9 +17,9 @@ MonoBehaviour:
     o sino un malvado hechizo caer\xE1 sobre ti\n"
   - "Pero primero\u2026Si vas a querer salir de aqu\xED necesito que me hagas un
     favor, recoge mis tres preciados enchiridiones m\xE1gicos, elige uno de estos
-    tres cuatro caminos para empezar\_tu\_aventura"
-  - "Cuando los consigas regresa conmigo para darte el musgo m\xE1gico que te har\xE1
-    estar un paso m\xE1s cerca\_de\_escapar"
+    cuatro caminos para empezar\_tu\_aventura"
+  - Cuando los consigas regresa conmigo para darte acceso a la sala de batalla que
+    se encuentra por el tercer pasillo
   tiempoEntreLetras: 0.03
   tieneMision: 1
   mision: {fileID: 11400000, guid: 786884c44857cc44e9f365050a1badef, type: 2}
