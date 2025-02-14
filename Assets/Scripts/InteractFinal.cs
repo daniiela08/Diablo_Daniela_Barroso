@@ -15,7 +15,7 @@ public class InteractFinal : MonoBehaviour, IInteractable
     {
         if (mision.repeticionActual >= mision.repeticionesTotales)
         {
-            gameObject.SetActive(false);
+            SceneManager.LoadScene(2);
         }
     }
     private void OnMouseEnter()
