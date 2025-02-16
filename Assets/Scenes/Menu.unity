@@ -832,8 +832,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   escenaPrincipal: {fileID: 492190069}
   escenaAjustes: {fileID: 961467057}
-  escenaHistoria: {fileID: 0}
-  escenaControles: {fileID: 0}
 --- !u!1 &210453448
 GameObject:
   m_ObjectHideFlags: 0
@@ -1255,7 +1253,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &492190070
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1533,7 +1531,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &961467058
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2736,8 +2734,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -261, y: 133}
-  m_SizeDelta: {x: 331.9406, y: 44.2127}
+  m_AnchoredPosition: {x: -213.49, y: 133}
+  m_SizeDelta: {x: 426.97, y: 44.213}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1971415381
 MonoBehaviour:
@@ -2759,7 +2757,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: W A S D MOVE
+  m_text: MOUSE 0 TO MOVE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9d639b305118e5b499f9d51e64bc1711, type: 2}
   m_sharedMaterial: {fileID: 3696597103676793015, guid: 9d639b305118e5b499f9d51e64bc1711,
@@ -3009,8 +3007,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -151.00235, y: -167}
-  m_SizeDelta: {x: 643.936, y: 44.2127}
+  m_AnchoredPosition: {x: -122.182, y: -167}
+  m_SizeDelta: {x: 701.576, y: 44.213}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2074973462
 MonoBehaviour:
@@ -3032,7 +3030,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CLICK TO INTERACT/ATACK
+  m_text: MOUSE 0 TO INTERACT/ATACK
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9d639b305118e5b499f9d51e64bc1711, type: 2}
   m_sharedMaterial: {fileID: 3696597103676793015, guid: 9d639b305118e5b499f9d51e64bc1711,

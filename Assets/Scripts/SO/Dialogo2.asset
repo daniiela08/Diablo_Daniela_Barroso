@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Dialogo2
   m_EditorClassIdentifier: 
   frases:
-  - "Gracias por mis libros viajero , aqu\xED tienes el musgo, dir\xEDgete por el
-    tercer pasillo, ahora el Golem\_de\_dejar\xE1\_pasar"
+  - 'Gracias por mis libros viajero, ahora accede a la sala de batalla para poder
+    escapar... Suerte!
+
+'
   tiempoEntreLetras: 0.03
   tieneMision: 0
   mision: {fileID: 11400000, guid: 786884c44857cc44e9f365050a1badef, type: 2}

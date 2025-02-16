@@ -7,36 +7,20 @@ public class Scenemanagement : MonoBehaviour
 {
     [SerializeField] private GameObject escenaPrincipal;
     [SerializeField] private GameObject escenaAjustes;
-    [SerializeField] private GameObject escenaHistoria;
-    [SerializeField] private GameObject escenaControles;
 
     public void Ajustes()
     {
         escenaPrincipal.SetActive(false);
-        escenaHistoria.SetActive(false);
-        escenaControles.SetActive(false);
         escenaAjustes.SetActive(true);
     }
     public void Principal()
     {
         escenaPrincipal.SetActive(true);
-        escenaHistoria.SetActive(false);
-        escenaControles.SetActive(false);
         escenaAjustes.SetActive(false);
     }
-    public void Historia()
+    public void Menu()
     {
-        escenaPrincipal.SetActive(false);
-        escenaAjustes.SetActive(false);
-        escenaHistoria.SetActive(true);
-        escenaControles.SetActive(false);
-    }
-    public void Controles()
-    {
-        escenaPrincipal.SetActive(false);
-        escenaAjustes.SetActive(false);
-        escenaHistoria.SetActive(false);
-        escenaControles.SetActive(true);
+        SceneManager.LoadScene(0);
     }
     public void Jugar()
     {
